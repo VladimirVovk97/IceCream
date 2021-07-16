@@ -11,11 +11,44 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
+    <!-- Header -->
+    <header>
+    <include src=".partials/hero-header.html"></include>
+    </header>
+
+    <main>
+      <!-- Section products -->
+      <include src=".partials/products.html"></include>
+
+      <!-- Section about -->
+      <include src=".partials/about.html"></include>
+
+    <!-- Section advantages -->
+     <include src=".partials/advantages.html"></include>
+
+      <!-- Section gallery -->
+      <include src=".partials/gallery.html"></include>
+
+      <!-- Section reviews -->
+      <include src=".partials/reviews.html"></include>
+
+      <!-- Section contacts -->
+      <include src=".partials/contacts.html"></include>
+
+    </main>
+
+    <footer>
+
+     <!-- Section contacts -->
+     <include src=".partials/contacts.html"></include>
+
+    </footer>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
   </body>
 </html>
