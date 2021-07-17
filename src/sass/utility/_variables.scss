@@ -1,3 +1,4 @@
+//COMMON
 .container {
   width: 100%;
   padding-left: 20px;
@@ -44,3 +45,19 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+// COLORS
+$text-primary: #ffffff;
+$text-secondary: #000000;
+$accent-color: #d41443;
+$text-third: #907e82;
+$text-decoration: #ffa5ba;
+
+$bcg-white: #ffffff;
+$bcg-pink-light: #fff5f6;
+$bcg-pink: #ffb8ca;
+$bcg-pink-heavy: #e17992;
+
+// FONTS STYLES
+$fontDMSans: 'DM Sans', sans-serif;
+$fontTitanOne: 'Titan One', sans-serif;
