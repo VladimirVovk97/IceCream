@@ -1,7 +1,7 @@
-.section {
+.about {
   background: $bcg-pink-light;
 }
-.container {
+.container-about {
   background-position: 0 93%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10,9 +10,63 @@
     background-image: url(../images/mobile-cow-background-2x.png);
   }
 }
-.container-text__item {
-  margin: 46px 30px;
+.about__title {
+  font-family: $fontTitanOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $accent-color;
+}
+.about__title--details {
+  font-family: $fontTitanOne;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent-color;
 }
 .container-text__description {
+  margin-top: 46px;
+  margin-bottom: 47px;
   color: $text-secondary;
+}
+.container-text__item {
+  margin-top: 0;
+  margin-bottom: 47px;
+  color: $text-third;
+}
+.container-button {
+  background-color: $bcg-white;
+  color: $accent-color;
+  font-family: $fontDMSans;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 22px;
+  min-width: 160px;
+  border: 0px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bg-1;
+  }
+}
+.button--light {
+  &::after {
+    content: '';
+    border: solid $bcg-white;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 12px;
+  }
 }
