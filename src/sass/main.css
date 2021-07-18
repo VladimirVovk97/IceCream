@@ -93,10 +93,10 @@
 
 .ice-cream {
   position: absolute;
-  right: 32px;
-  top: 92px;
+  left: 60px;
+  top: 422px;
   background-color: pink;
-  overflow: hidden;
+  background-color: transparent;
 }
 
 .hero-elipse {
