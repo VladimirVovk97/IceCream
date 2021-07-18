@@ -1,0 +1,107 @@
+// .contacts {
+//   @media (min-width: 767px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+
+//   @media (min-width: 1200px) {
+//     flex-wrap: nowrap;
+//   }
+// }
+
+.contacts-section {
+  background-color: $bcg-pink-light;
+}
+
+.contacts__item {
+  background: $bcg-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  width: 220px;
+  height: 427px;
+
+  padding: 43px 20px;
+
+  &::before {
+    color: $text-primary;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 25px;
+  }
+
+  &:nth-child(odd)::before {
+    content: 'CAFE';
+
+    background: $bcg-brown;
+    border-radius: 4px;
+
+    width: 80px;
+    height: 16px;
+  }
+
+  &:nth-child(even)::before {
+    content: 'FOODTRUCK';
+
+    background: $bcg-green;
+    border-radius: 4px;
+
+    width: 130px;
+    height: 16px;
+  }
+}
+
+.contacts__title {
+  color: $text-secondary;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 10px;
+}
+
+.contacts__text {
+  color: $text-third;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.contacts-container::after {
+  border: 1px solid #e1e1e1;
+  padding: 25px 0;
+}
+
+.dates__item + .dates__item {
+  margin-bottom: 10px;
+}
+
+.dates__title {
+  color: $text-secondary;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18.6;
+}
+
+.dates__text {
+  color: $text-decoration;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.mobile-contacts__item {
+  color: $text-third;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
