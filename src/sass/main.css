@@ -1,8 +1,72 @@
-<<<<<<< Updated upstream
-@charset "UTF-8";
+
 body {
   background: #FFF5F6;
-=======
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a .link {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visual--hiden {
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .advantages {
   padding-left: 20px;
 }
@@ -16,6 +80,7 @@ body {
 }
 
 @media (min-width: 480px) {
+@media (min-width: 560px) {
   .advantages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,6 +116,7 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
+  color: #d41443;
   margin: 16px 0 16px 0;
 }
 
@@ -152,7 +218,6 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
->>>>>>> Stashed changes
 }
 
 .section--mobile {
@@ -169,7 +234,7 @@ img {
   padding-bottom: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .section--mobile {
     padding: 90px 114px 0 114px;
   }
@@ -179,7 +244,7 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 480px) {
   .section--mobile {
     max-width: 700px;
     display: -webkit-box;
@@ -194,7 +259,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .section--mobile {
     max-width: 1280px;
     margin-left: auto;
@@ -209,7 +274,7 @@ img {
   margin-bottom: 43px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .company-description {
     width: auto;
   }
@@ -224,10 +289,10 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFA5BA;
+  color: #ffa5ba;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .company-description__text--first {
     font-size: 26px;
     line-height: 30px;
@@ -235,7 +300,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .company-description__text--first {
     font-size: 30px;
     line-height: 34px;
@@ -250,10 +315,10 @@ img {
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .company-description__text--second {
     font-size: 48px;
     line-height: 55px;
@@ -261,7 +326,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .company-description__text--second {
     font-size: 58px;
     line-height: 66px;
@@ -283,7 +348,7 @@ img {
   height: 32px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .social__item {
     height: 32px;
   }
@@ -298,7 +363,7 @@ img {
   height: 32px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .social__icon {
     width: 34px;
     height: 34px;
@@ -309,7 +374,7 @@ img {
   border-bottom: 1px solid #E1E1E1;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 480px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,7 +397,7 @@ img {
   margin-bottom: 43px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .footer .contacts-container {
     margin-bottom: 175px;
     margin-left: auto;
@@ -347,7 +412,7 @@ img {
   text-align: right;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .footer__contact {
     font-size: 14px;
   }
@@ -355,7 +420,7 @@ img {
 
 .footer__number {
   margin-left: 2px;
-  color: #D41443;
+  color: #d41443;
 }
 
 .section--mobile .rights {
@@ -369,158 +434,63 @@ img {
   padding-top: 22px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 480px) {
   .section--mobile .rights {
     width: auto;
   }
 }
 
-/*!
-* chiefSlider
-*   site: https://itchief.ru/javascript/slider
-*   github: https://github.com/itchief/ui-components
-*
-* Copyright 2018-2021 Alexander Maltsev
-* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
-*/
-.slider {
+.slider__item {
   position: relative;
-}
-
-.slider__container {
-  overflow: hidden;
-}
-
-.slider__text {
-  color: red;
-}
-
-.slider__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.slider_disable-transition {
-  -webkit-transition: none;
-  transition: none;
+.slider__comments {
+  width: 100%;
+  padding: 43px 66px 26px 57px;
+  background-color: #fafafa;
 }
 
-.slider__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-/* кнопки влево и вправо */
-.slider__control {
-  position: absolute;
-  top: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.slider__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 20px;
-  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  letter-spacing: 0.03em;
   text-align: center;
-  height: 30px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.2);
+  background-image: repeating-linear-gradient(to top, #e1e1e1, #e1e1e1 1px, transparent 1px, transparent 31px);
 }
 
-.slider__control_hide {
-  display: none;
+.slider__img {
+  padding-bottom: 29px;
 }
 
-.slider__control[data-slide='prev'] {
-  left: 0;
-}
-
-.slider__control[data-slide='next'] {
-  right: 0;
-}
-
-.slider__control:hover,
-.slider__control:focus {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.slider__control::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.slider__control[data-slide='prev']::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.slider__control[data-slide='next']::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-
-/* индикаторы */
-.slider__indicators {
+.slider__text::before {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.slider__indicators li {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  width: 30px;
-  height: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-clip: padding-box;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-}
-
-.slider__indicators li.active {
-  background-color: rgba(255, 255, 255, 0.9);
+  left: 61px;
+  top: 142px;
+  content: '';
+  width: 54px;
+  height: 40px;
+  background-image: url("../images/commas.svg");
+  background-size: 54px 40px;
+  opacity: 0.5;
 }
 
 .container {
@@ -587,4 +557,4 @@ img {
   height: 1px;
   margin: -1px;
 }
-/*# sourceMappingURL=main.css.map */
+}

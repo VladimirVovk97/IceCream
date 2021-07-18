@@ -1,9 +1,5 @@
-$color-accent-dark: #D41443;
-$color-accent-light: #FFA5BA;
-$bgc:#FFF5F6;
-body{
-    background: $bgc;
-}
+
+@import '../utility/variables';
 .section--mobile{
     display: flex;
     flex-wrap: wrap;
@@ -12,38 +8,32 @@ body{
     min-width: 320px;
     // padding-top: 60px;
     padding: 60px 20px 0 20px;
-    @media (min-width:1200px) {
+    @media (min-width:1280px) {
         padding: 90px 114px 0 114px;
-
     }
     .footer{
-            
         width: 100%;
     }
-    @media screen and (min-width: 560px) {
-        
+    @media screen and (min-width: 480px) {
         max-width: 700px; 
         display: flex;
         flex-direction: column;
-        
         margin-left: auto;
         margin-right: auto;
     }   
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     padding-bottom: 0;
-    
 }
 .company-description{
     // display: inline-flex;
     // flex-direction: column;
     padding: 0;
     width: 234px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         width: auto;
     }
     margin-top: 0   ;
@@ -57,23 +47,17 @@ body{
         font-family: Titan One;
         font-size: 18px;
         line-height: 21px;
-        @media (min-width: 560px) {
-            
-font-size: 26px;
-line-height: 30px;
-letter-spacing: 0.04em;
+        @media (min-width: 480px) {
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 0.04em;
         }
-        @media (min-width:1200px) {
-            
-
+        @media (min-width:1280px) {
             font-size: 30px;
             line-height: 34px;
         }
         text-transform: uppercase;
-        
-        color: $color-accent-light;  
-        
-        
+        color: $text-decoration;  
     }
     &__text--second{
     font-family: Titan One;
@@ -81,23 +65,18 @@ letter-spacing: 0.04em;
     font-weight: normal;
     font-size: 34px;
     line-height: 39px;
-
     letter-spacing: 0.04em;
-    @media (min-width: 560px) {
-        
+    @media (min-width: 480px) {
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.06em;
     }
-    @media (min-width:1200px) {
-            
-
+    @media (min-width:1280px) {
         font-size: 58px;
         line-height: 66px;
     }
     text-transform: uppercase;
-    
-    color: $color-accent-dark;
+    color: $accent-color;
     }
 }
 .social{
@@ -105,10 +84,9 @@ letter-spacing: 0.04em;
     margin-bottom: 46px;
     display: flex;
     justify-content: flex-end;
-
     &__item{
         height: 32px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             height: 32px;
 
         }
@@ -117,19 +95,16 @@ letter-spacing: 0.04em;
         }
     }
     &__icon{
-
         width: 32px;
         height: 32px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             width: 34px;
         height: 34px;
         }
     }
-    
 }
-
 .footer {
-    @media screen and (min-width: 560px) {
+    @media screen and (min-width: 480px) {
         display: flex;
         width: 100%;
     }
@@ -139,7 +114,7 @@ letter-spacing: 0.04em;
         flex-direction: column;
         justify-content: flex-end;
         margin-bottom: 43px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             margin-bottom: 175px;
             margin-left: auto;
         }
@@ -148,46 +123,27 @@ letter-spacing: 0.04em;
         font-family: DM Sans;
     font-weight: bold;
     font-size: 12px;
-    @media (min-width:560px) {
+    @media (min-width:480px) {
         font-size: 14px;
     }
-    
     line-height: 186%;
     text-align: right;
-    
-    // display: flex;
-    // justify-content: flex-end;
-    
-    
-    
-    
     }
     &__number{
         margin-left: 2px;
-        color: $color-accent-dark;
+        color: $accent-color;
     }
-    
-    
 }
 .section--mobile .rights{
-    // @media (max-width: 479px) {
         width: 140px;
-        @media (min-width:560px) {
+        @media (min-width:480px) {
             width: auto;
         }
-        // margin-right: 0px;
-
-    // }
-    font-family: DM Sans;
-font-weight: bold;
-font-size: 14px;
-line-height: 152%;
-text-align: center;
-color: #907E82;
-    // padding: 22px 85px 22px 65px;
-    
-    // display: flex;
-    // justify-content: center;
-    padding-top: 22px;
- 
+        font-family: DM Sans;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color: #907E82;
+        padding-top: 22px;
 }
