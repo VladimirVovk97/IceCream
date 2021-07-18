@@ -1,9 +1,9 @@
-$color-accent-dark: #D41443;
-$color-accent-light: #FFA5BA;
-$bgc:#FFF5F6;
-body{
-    background: $bgc;
-}
+// 
+
+// body{
+//     background: $bgc;
+// }
+@import '../utility/variables';
 .section--mobile{
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +71,7 @@ letter-spacing: 0.04em;
         }
         text-transform: uppercase;
         
-        color: $color-accent-light;  
+        color: $text-decoration;  
         
         
     }
@@ -97,7 +97,7 @@ letter-spacing: 0.04em;
     }
     text-transform: uppercase;
     
-    color: $color-accent-dark;
+    color: $accent-color;
     }
 }
 .social{
@@ -164,7 +164,7 @@ letter-spacing: 0.04em;
     }
     &__number{
         margin-left: 2px;
-        color: $color-accent-dark;
+        color: $accent-color;
     }
     
     
