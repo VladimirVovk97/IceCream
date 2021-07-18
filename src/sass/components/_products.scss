@@ -58,12 +58,13 @@
   }
 }
 
-.products__img {
-  position: absolute;
-  top: -113px;
-  width: 249px;
-  transform: translateX(-50%);
-}
+// .products__img {
+//   position: absolute;
+//   top: -113px;
+//   width: 249px;
+//   height: 252px;
+//   transform: translateX(-50%);
+// }
 
 .products-description {
   padding-right: 39px;
@@ -80,6 +81,63 @@
     line-height: 1.15;
     text-transform: uppercase;
     color: $text-primary;
+
+    &--first::before {
+      content: '';
+      position: absolute;
+      bottom: 101px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../src/images/mobile-ice-cream-1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../src/images/mobile-ice-cream-2x.png);
+      }
+    }
+
+    &--second::before {
+      content: '';
+      position: absolute;
+      bottom: 101px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../src/images/mobile-ice-coffee-1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../src/images/mobile-ice-coffee-2x.png);
+      }
+    }
+
+    &--third::before {
+      content: '';
+      position: absolute;
+      bottom: 101px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../src/images/mobile-milkshakes-1x.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../src/images/mobile-milkshakes-2x.png);
+      }
+    }
 
     &::after {
       content: '';
