@@ -1,0 +1,79 @@
+.section-about {
+  background: $bcg-pink-light;
+  padding-top: 125px;
+  padding-bottom: 0;
+}
+
+.container-about {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: 0 93%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../images/mobile-cow-background-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile-cow-background-2x.png);
+  }
+}
+.about__title {
+  font-family: $fontTitanOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $text-decoration;
+}
+.about__title--details {
+  font-family: $fontTitanOne;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $accent-color;
+}
+.container-text__item {
+  font-family: $fontDMSans;
+  color: $text-third;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  margin-bottom: 47px;
+}
+.container-text__description {
+  font-family: $fontDMSans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 46px;
+  margin-bottom: 47px;
+
+  color: $text-secondary;
+}
+
+.container-button {
+  background-color: $bcg-white;
+  color: $accent-color;
+  font-family: $fontDMSans;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 22px;
+  min-width: 160px;
+  border: 0px solid transparent;
+}
