@@ -12,7 +12,7 @@
     min-width: 320px;
     // padding-top: 60px;
     padding: 60px 20px 0 20px;
-    @media (min-width:1200px) {
+    @media (min-width:1280px) {
         padding: 90px 114px 0 114px;
 
     }
@@ -20,7 +20,7 @@
             
         width: 100%;
     }
-    @media screen and (min-width: 560px) {
+    @media screen and (min-width: 480px) {
         
         max-width: 700px; 
         display: flex;
@@ -29,7 +29,7 @@
         margin-left: auto;
         margin-right: auto;
     }   
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
@@ -43,7 +43,7 @@
     // flex-direction: column;
     padding: 0;
     width: 234px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         width: auto;
     }
     margin-top: 0   ;
@@ -57,13 +57,13 @@
         font-family: Titan One;
         font-size: 18px;
         line-height: 21px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             
 font-size: 26px;
 line-height: 30px;
 letter-spacing: 0.04em;
         }
-        @media (min-width:1200px) {
+        @media (min-width:1280px) {
             
 
             font-size: 30px;
@@ -83,13 +83,13 @@ letter-spacing: 0.04em;
     line-height: 39px;
 
     letter-spacing: 0.04em;
-    @media (min-width: 560px) {
+    @media (min-width: 480px) {
         
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.06em;
     }
-    @media (min-width:1200px) {
+    @media (min-width:1280px) {
             
 
         font-size: 58px;
@@ -108,7 +108,7 @@ letter-spacing: 0.04em;
 
     &__item{
         height: 32px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             height: 32px;
 
         }
@@ -120,7 +120,7 @@ letter-spacing: 0.04em;
 
         width: 32px;
         height: 32px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             width: 34px;
         height: 34px;
         }
@@ -129,7 +129,7 @@ letter-spacing: 0.04em;
 }
 
 .footer {
-    @media screen and (min-width: 560px) {
+    @media screen and (min-width: 480px) {
         display: flex;
         width: 100%;
     }
@@ -139,7 +139,7 @@ letter-spacing: 0.04em;
         flex-direction: column;
         justify-content: flex-end;
         margin-bottom: 43px;
-        @media (min-width: 560px) {
+        @media (min-width: 480px) {
             margin-bottom: 175px;
             margin-left: auto;
         }
@@ -148,7 +148,7 @@ letter-spacing: 0.04em;
         font-family: DM Sans;
     font-weight: bold;
     font-size: 12px;
-    @media (min-width:560px) {
+    @media (min-width:480px) {
         font-size: 14px;
     }
     
@@ -172,7 +172,7 @@ letter-spacing: 0.04em;
 .section--mobile .rights{
     // @media (max-width: 479px) {
         width: 140px;
-        @media (min-width:560px) {
+        @media (min-width:480px) {
             width: auto;
         }
         // margin-right: 0px;
