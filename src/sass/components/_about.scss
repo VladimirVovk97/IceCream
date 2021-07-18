@@ -1,0 +1,18 @@
+.section {
+  background: $bcg-pink-light;
+}
+.container {
+  background-position: 0 93%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../images/mobile-cow-background-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile-cow-background-2x.png);
+  }
+}
+.container-text__item {
+  margin: 46px 30px;
+}
+.container-text__description {
+  color: $text-secondary;
+}
