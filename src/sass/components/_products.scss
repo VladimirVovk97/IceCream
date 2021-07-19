@@ -11,6 +11,11 @@
     padding-top: 122px;
     padding-bottom: 112px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 // .products__container {
@@ -31,6 +36,11 @@
     font-size: 26px;
     line-height: 1.154;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.133;
+  }
 }
 
 .products__title {
@@ -45,8 +55,16 @@
   color: $accent-color;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
     font-size: 48px;
     line-height: 1.146;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 259px;
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -56,25 +74,27 @@
   margin-bottom: 0;
 
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
   }
 }
 
 .products__item {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 161px;
-  padding-bottom: 41px;
-  max-width: 280px;
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 130px;
     }
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 161px;
+    padding-bottom: 41px;
+    max-width: 280px;
   }
 
   &--first {
@@ -90,10 +110,25 @@
   }
 
   @media screen and (min-width: 768px) {
-    // margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    width: calc((100% - 40px) / 3);
     padding-top: 152px;
     padding-bottom: 40px;
     width: 220px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    padding-top: 163px;
+    padding-bottom: 50px;
+    width: 329px;
+    height: 525px;
   }
 }
 
@@ -112,7 +147,11 @@
   @media screen and (min-width: 768px) {
     padding-right: 11px;
     padding-left: 11px;
-    // padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-right: 44px;
+    padding-left: 44px;
   }
 
   &__title {
@@ -120,7 +159,7 @@
     display: block;
     margin-top: 0;
     margin-bottom: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
     font-family: $fontTitanOne;
     font-weight: 400;
     font-size: 20px;
@@ -128,10 +167,16 @@
     text-transform: uppercase;
     color: $text-primary;
 
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 38px;
+      font-size: 30px;
+      line-height: 1.133;
+    }
+
     &--first::before {
       content: '';
       position: absolute;
-      bottom: 75px;
+      bottom: 81px;
       left: 50%;
       transform: translateX(-50%);
       width: 249px;
@@ -148,7 +193,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        bottom: 82px;
+        bottom: 90px;
         width: 220px;
         height: 226px;
         background-image: url(../../src/images/tablet-ice-cream-1x.png);
@@ -159,12 +204,25 @@
           background-image: url(../../src/images/tablet-ice-cream-2x.png);
         }
       }
+
+      @media screen and (min-width: 1280px) {
+        bottom: 105px;
+        width: 335px;
+        height: 335px;
+        background-image: url(../../src/images/ice-cream-1x.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../../src/images/ice-cream-2x.png);
+        }
+      }
     }
 
     &--second::before {
       content: '';
       position: absolute;
-      bottom: 75px;
+      bottom: 81px;
       left: 50%;
       transform: translateX(-50%);
       width: 249px;
@@ -181,7 +239,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        bottom: 82px;
+        bottom: 90px;
         width: 220px;
         height: 226px;
         background-image: url(../../src/images/tablet-ice-coffee-1x.png);
@@ -192,12 +250,25 @@
           background-image: url(../../src/images/tablet-ice-coffee-2x.png);
         }
       }
+
+      @media screen and (min-width: 1280px) {
+        bottom: 105px;
+        width: 335px;
+        height: 335px;
+        background-image: url(../../src/images/ice-coffee-1x.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../../src/images/ice-coffee-2x.png);
+        }
+      }
     }
 
     &--third::before {
       content: '';
       position: absolute;
-      bottom: 75px;
+      bottom: 81px;
       left: 50%;
       transform: translateX(-50%);
       width: 249px;
@@ -214,7 +285,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        bottom: 82px;
+        bottom: 90px;
         width: 220px;
         height: 226px;
         background-image: url(../../src/images/tablet-milkshakes-1x.png);
@@ -225,6 +296,19 @@
           background-image: url(../../src/images/tablet-milkshakes-2x.png);
         }
       }
+
+      @media screen and (min-width: 1280px) {
+        bottom: 105px;
+        width: 335px;
+        height: 335px;
+        background-image: url(../../src/images/milkshakes-1x.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../../src/images/milkshakes-2x.png);
+        }
+      }
     }
 
     &::after {
@@ -233,7 +317,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 26px;
+      width: 30px;
       height: 6px;
       background-image: url(../../src/images/dots-1x.png);
       background-size: contain;
@@ -253,6 +337,12 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
       line-height: 1.786;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 62px;
+      font-size: 16px;
+      line-height: 1.75;
     }
   }
 
