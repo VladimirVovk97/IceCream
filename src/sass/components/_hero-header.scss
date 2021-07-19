@@ -30,23 +30,25 @@
 .nav-menu {
   display: flex;
   align-items: center;
+  margin-top: 6px;
   @media screen and (min-width: 768px) {
     margin-top: 37px;
   }
 }
 .logo {
   min-width: 199px;
-  min-height: 50px;
-  margin-top: 6px;
+  height: 50px;
   @media screen and (min-width: 1200px) {
     margin-right: 110px;
   }
 }
 .site-menu {
+  display: flex;
+  padding-left: 0;
+  align-items: center;
   @media screen and (max-width: 1200px) {
     display: none;
   }
-  display: flex;
   &__item {
   }
   &__item:not(:last-child) {
@@ -65,7 +67,29 @@
   color: $text-primary;
 }
 .header-button {
+  width: 160px;
+  height: 44px;
+  border-radius:22px;
+  border: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+background-color: $bcg-white;
+color: $accent-color;
+  @media screen and (max-width: 767px) {
   display: none;
+  }
+  @media screen and (min-width: 768px) {
+margin-left: 341px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 110px;
+  }
 }
 .mobile-menu {
   position: fixed;
@@ -163,6 +187,7 @@
 }
 .mobile-menu.is-hidden {
   opacity: 0;
+  display: none;
   pointer-events: none;
 }
 .hero-title {
@@ -185,11 +210,14 @@
   display: flex;
   padding-left: 0;
   margin-top: 20px;
-  margin-bottom: 0;
-  margin-bottom: 66px;
+  margin-bottom: 160px;
   cursor: pointer;
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    margin-bottom: 66px;
+  }
   @media screen and (min-width: 1200px) {
     margin-top: 25px;
+    margin-bottom: 112px;
   }
 }
 .hero-buttons__item:first-child {
@@ -208,8 +236,19 @@
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  color: $text-primary;
-  background: $accent-color;
+  color: $accent-color;
+  background: $bcg-white;
+  &:hover,&:focus{
+background-color: $accent-color;
+color: $text-primary;}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  padding: 9px 20px;
+}
+@media screen and (min-width: 1200px) {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 13px 18px;
+  }
 }
 .hero-text {
   @media screen and (max-width: 768px) {
@@ -225,8 +264,11 @@
   @media screen and (min-width: 1200px) {
     width: 200px;
     height: 78px;
+    font-size: 14px;
+    line-height: 1.4;
     margin-bottom: 102px;
     margin-right: 0;
+    margin-left: 295px;
   }
   font-family: DM Sans;
   font-style: normal;
@@ -238,8 +280,76 @@
 .icon-place {
   display: none;
 }
+.us-cases-position{
+  display: flex;
+  justify-content: space-between;
+}
 .us-cafes {
-  display: none;
+  @media screen and (max-width: 767px) {
+  display: none;}
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
+}
+.us-cafes__list{
+  position: relative;
+padding-left: 0;
+margin-right: 0px;
+}
+.us-cafes__item:first-child{
+  margin-bottom: 15px;
+&::after{
+  content:"";
+  position: absolute;
+  display: inline-block;
+width: 30px;
+height: 30px;
+z-index: -1;
+left: 20px;
+bottom: 25px;
+border-radius: 50%; 
+background: #FFFFFF;
+}
+}
+.us-cafes__item:last-child{
+  &::after{
+    content:"";
+    position: absolute;
+    display: inline-block;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  left: 20px;
+  bottom: 65px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  }
+  }
+.us-cafes__amount{
+  font-family: Titan One;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 32px;
+/* identical to box height */
+
+text-align: right;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
+}
+.us-cafes__info{
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 10px;
+text-align: right;
+color: #FFFFFF;
 }
 .hero-ice-cream {
   position: absolute;
@@ -253,7 +363,7 @@
     width: 143px;
     height: 336px;
     left: 378px;
-    top: 63px;
+    bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 236px;
@@ -272,7 +382,7 @@
     width: 168px;
     height: 133px;
     left: 566px;
-    top: 266px;
+    bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 293px;
@@ -319,10 +429,5 @@
     height: 538px;
     left: 475px;
     top: 52px;
-  }
-}
-.header-button {
-  @media screen and (max-width: 1200px) {
-    display: none;
   }
 }
