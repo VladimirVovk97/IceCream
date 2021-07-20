@@ -1,6 +1,7 @@
 @import '../utility/variables';
 .section--mobile {
   display: flex;
+  background-color: $bcg-pink-light;
   flex-wrap: wrap;
   justify-content: center;
   // max-width: 320px;
@@ -132,17 +133,16 @@
   margin-left: 2px;
   color: $accent-color;
 }
+.section--mobile .rights{
+        width: 140px;
+        @media (min-width:480px) {
+            width: auto;
+        }
+        font-family: DM Sans;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color: #907E82;
 
-.section--mobile .rights {
-  width: 140px;
-  @media (min-width: 480px) {
-    width: auto;
-  }
-  font-family: DM Sans;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 152%;
-  text-align: center;
-  color: #907e82;
-  padding-top: 22px;
-}
+  padding: 22px 0;}
