@@ -13,7 +13,7 @@
         display: flex;
         &__item{
             width: 222px;
-            min-width: 180px
+            min-width: 180px;
 
         }
         &__item:not(:last-child){
