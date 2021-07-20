@@ -59,7 +59,7 @@
     }
 }
 .advantages__title{
-    font-family: Titan One;
+    font-family: $fontTitanOne;
 font-size: 36px;
 line-height: 41px;
 letter-spacing: 0.04em;
@@ -80,20 +80,20 @@ margin: 16px 0 16px 0;
 }
 
 .advantages__text{
-    font-family: DM Sans;
-font-weight: bold;
+    font-family: $fontDMSans;
+font-weight: 700;
 font-size: 12px;
-line-height: 170%;
+line-height: 20px;
 @media (min-width:480px) {
     
 font-size: 14px;
-line-height: 174%;
+line-height: 25px;
     
 }
 @media (min-width:480px) {
     
 font-size: 16px;
-line-height: 176%;
+line-height: 25px;
         
     }
 }
