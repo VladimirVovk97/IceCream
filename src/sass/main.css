@@ -362,7 +362,7 @@ img {
   background-color: #fff5f6;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-section {
     background-image: url(/images/contacts-section-1x.png);
     background-size: contain;
@@ -386,7 +386,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -419,7 +419,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts__item {
     width: 330px;
     padding: 55px 40px;
@@ -485,7 +485,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts__title {
     font-size: 16px;
   }
@@ -505,7 +505,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts__text {
     font-size: 16px;
     line-height: 1.83;
@@ -523,7 +523,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-list__item {
     padding: 32px 0;
   }
@@ -559,7 +559,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .dates__title {
     font-size: 16px;
     line-height: 1.86;
@@ -579,7 +579,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .dates__text {
     font-size: 16px;
   }
@@ -601,7 +601,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .mobile-contacts__link {
     font-size: 16px;
     line-height: 1.83;
