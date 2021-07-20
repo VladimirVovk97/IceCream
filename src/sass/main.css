@@ -371,6 +371,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(/images/contacts-section-2x.png);
+  }
+}
+
 .contacts {
   margin-bottom: 55px;
 }
