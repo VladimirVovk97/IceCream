@@ -78,7 +78,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 9px 17px;
+  padding: 9px 37px;
   border-radius: 22px;
   border: none;
   cursor: pointer;
@@ -364,9 +364,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts-section {
-    background-size: 100%;
-    background-position: 0 50%;
+    background-image: url(/images/contacts-section-1x.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -511,37 +512,33 @@ img {
   }
 }
 
-.contacts-container {
+.contacts-list__item {
   border-bottom: 1px solid #e1e1e1;
   padding: 25px 0;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-container {
+  .contacts-list__item {
     padding: 30px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-container {
+  .contacts-list__item {
     padding: 32px 0;
   }
 }
 
-.contacts-container:last-child {
+.contacts-list__item:last-child {
   border-bottom: none;
   padding-top: 25px;
   padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-container:last-child {
+  .contacts-list__item:last-child {
     padding-top: 30px;
   }
-}
-
-.dates {
-  padding: 0;
 }
 
 .dates__item:not(:last-child) {
@@ -586,10 +583,6 @@ img {
   .dates__text {
     font-size: 16px;
   }
-}
-
-.mobile-contacts {
-  padding: 0;
 }
 
 .mobile-contacts__link {
@@ -655,7 +648,7 @@ img {
 }
 
 .button-list__width-dark {
-  padding: 9px 30px;
+  padding: 9px 35px;
 }
 
 .button-list__width-light {
