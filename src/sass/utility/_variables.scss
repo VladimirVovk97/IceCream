@@ -11,6 +11,11 @@ $bcg-pink: #ffb8ca;
 $bcg-pink-heavy: #e17992;
 $btn-hover-1: #ecebeb;
 $btn-hover-2: #c7133e;
+$bcg-accent-color: #d41342;
+$bcg-brown: #f0d1a5;
+$bcg-green: #c2e297;
+$bcg-btn-hover-light: #ecebeb;
+$border-color: #e1e1e1;
 
 // FONTS STYLES
 $fontDMSans: 'DM Sans', sans-serif;
@@ -42,6 +47,7 @@ $fontTitanOne: 'Titan One', sans-serif;
   }
 }
 ul {
+  padding: 0;
   list-style: none;
 }
 a .link {

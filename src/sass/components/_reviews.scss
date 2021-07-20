@@ -1,3 +1,12 @@
+// .slider {
+//   padding-bottom: 119px;
+// }
+.container--reviews {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
 .slider__item {
   position: relative;
   display: flex;
@@ -7,9 +16,14 @@
 }
 
 .slider__comments {
-  width: 100%;
+  // width: 100%;
   padding: 43px 66px 26px 57px;
   background-color: #fafafa;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    padding: 47px 80px 34px 80px;
+  }
 }
 
 .slider__text {
@@ -29,10 +43,27 @@
     transparent 1px,
     transparent 31px
   );
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .slider__img {
   padding-bottom: 29px;
+}
+// .slider__nav {
+//   position: relative;
+// }
+.slider__adress {
+  padding-top: 52px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.88;
+  color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .slider__text::before {
@@ -45,4 +76,151 @@
   background-image: url('../images/commas.svg');
   background-size: 54px 40px;
   opacity: 0.5;
+}
+.slider__nav {
+  position: relative;
+  padding-top: 52px;
+  @media screen and (min-width: 768px) {
+    padding-top: 42px;
+  }
+}
+.slider__adress::before {
+  position: absolute;
+  bottom: 43px;
+  // right: 34px;
+  transform: translateX(60%);
+  content: ' ';
+  width: 32px;
+  height: 4px;
+  background-image: url('../images/review-dots.svg');
+  // fill: #c7133e;
+}
+
+// .slick-slider {
+//   position: relative;
+
+//   display: block;
+//   box-sizing: border-box;
+
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+
+//   -webkit-touch-callout: none;
+//   -khtml-user-select: none;
+//   -ms-touch-action: pan-y;
+//   touch-action: pan-y;
+//   -webkit-tap-highlight-color: transparent;
+// }
+
+.slick-list {
+  overflow: hidden;
+  // position: relative;
+
+  // display: block;
+  // overflow: hidden;
+
+  // margin: 0;
+  // padding: 0;
+}
+// // .slick-list:focus {
+// //   outline: none;
+// // }
+// .slick-list.dragging {
+//   cursor: pointer;
+//   cursor: hand;
+// }
+
+// .slick-slider .slick-track,
+// .slick-slider .slick-list {
+//   -webkit-transform: translate3d(0, 0, 0);
+//   -moz-transform: translate3d(0, 0, 0);
+//   -ms-transform: translate3d(0, 0, 0);
+//   -o-transform: translate3d(0, 0, 0);
+//   transform: translate3d(0, 0, 0);
+// }
+
+.slick-track {
+  // position: relative;
+  // top: 0;
+  // left: 0;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+// // .slick-track:before,
+// // .slick-track:after {
+// //   display: table;
+
+// //   content: '';
+// // }
+// // .slick-track:after {
+// //   clear: both;
+// // }
+// // .slick-loading .slick-track {
+// //   visibility: hidden;
+// // }
+
+// .slick-slide {
+//   display: none;
+//   float: left;
+
+//   height: 100%;
+//   min-height: 1px;
+// }
+// [dir='rtl'] .slick-slide {
+//   float: right;
+// }
+// // .slick-slide img {
+// //   display: block;
+// // }
+// .slick-slide.slick-loading img {
+//   display: none;
+// }
+// .slick-slide.dragging img {
+//   pointer-events: none;
+// }
+// .slick-initialized .slick-slide {
+//   display: block;
+// }
+// .slick-loading .slick-slide {
+//   visibility: hidden;
+// }
+// .slick-vertical .slick-slide {
+//   display: block;
+
+//   height: auto;
+
+//   border: 1px solid transparent;
+// }
+// Dots
+.slider .slick-dots {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  // margin-left: 30px;
+  // margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 30px;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #d9d9d9;
+  border-radius: 70%;
+  border-color: transparent;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: #d31342;
+  border-radius: 50%;
+  // border-color: blue;
 }
