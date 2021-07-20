@@ -9,11 +9,11 @@
         margin-bottom: 38px;
         
     }
-    @media (min-width:560px) {
+    @media (min-width:480px) {
         display: flex;
         &__item{
             width: 222px;
-            min-width: 180px
+            min-width: 180px;
 
         }
         &__item:not(:last-child){
@@ -22,7 +22,7 @@
             
         }
     }
-    @media (min-width:1200px) {
+    @media (min-width:1280px) {
         padding-left: 114px;
         &__item{
             width: 330px;
@@ -42,12 +42,12 @@ line-height: 41px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: $accent-color;
-@media (min-width:560px) {
+@media (min-width:480px) {
     
 font-size: 48px;
 line-height: 55px;
 }
-@media (min-width:1200px) {
+@media (min-width:1280px) {
     
     
 font-size: 58px;
@@ -61,16 +61,62 @@ margin: 16px 0 16px 0;
 font-weight: bold;
 font-size: 12px;
 line-height: 170%;
-@media (min-width:560px) {
+@media (min-width:480px) {
     
 font-size: 14px;
 line-height: 174%;
     
 }
-@media (min-width:560px) {
+@media (min-width:480px) {
     
 font-size: 16px;
 line-height: 176%;
         
     }
+}
+.advantages__item{
+    // padding-top: 70px;
+}
+.advantages__title{
+    position: relative;
+    padding-top: 70px;
+}
+.one::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    // top: auto;
+    top: 0px;
+    @media (min-width: 480px) {
+        top: -20px;
+    }
+    background-image: url('../images/advantage-one-1x.png');
+    background-repeat: no-repeat;
+}
+.two::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    // top: auto;
+    top: 0px;
+    @media (min-width: 480px) {
+        top: -20px;
+    }
+    background-image: url('../images/advantage-two-1x.png');
+    background-repeat: no-repeat;
+}
+.three::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    // top: auto ;
+    top: 0px;
+    @media (min-width: 480px) {
+        top: -20px;
+    }
+    background-image: url('../images/advantage-three-1x.png');
+    background-repeat: no-repeat;
 }
