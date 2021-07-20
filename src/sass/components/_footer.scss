@@ -1,6 +1,7 @@
 
 @import '../utility/variables';
 .section--mobile{
+    background-color: $bcg-pink-light;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -145,5 +146,5 @@
         line-height: 152%;
         text-align: center;
         color: #907E82;
-        padding-top: 22px;
+        padding: 22px 0;
 }
