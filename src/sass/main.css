@@ -64,6 +64,59 @@ img {
   margin: -1px;
 }
 
+.button {
+  background: #d41342;
+  color: #ffffff;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 9px 17px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  background-color: #d41342;
+}
+
+.button--light {
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+.button--light:hover, .button--light:focus {
+  background-color: #ecebeb;
+}
+
+.button--arrow-light::after {
+  content: '';
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  margin-left: 12px;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.button--arrow-dark::after {
+  content: '';
+  border: solid #d41443;
+  border-width: 0 2px 2px 0;
+  margin-left: 12px;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .section-about {
   background: #fff5f6;
   padding-top: 125px;
@@ -305,6 +358,7 @@ img {
 }
 
 .contacts-section {
+  font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
 }
 
@@ -424,6 +478,18 @@ img {
   margin: 0 0 10px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__title {
+    font-size: 16px;
+  }
+}
+
 .contacts__text {
   color: #907e82;
   font-weight: 500;
@@ -478,7 +544,7 @@ img {
   padding: 0;
 }
 
-.dates__item + .dates__item {
+.dates__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -588,24 +654,12 @@ img {
   }
 }
 
-.button {
-  background: #d41342;
-  color: #ffffff;
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3125;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 9px 17px;
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
+.button-list__width-dark {
+  padding: 9px 30px;
+}
+
+.button-list__width-light {
+  padding: 9px 39px;
 }
 
 .section--mobile {

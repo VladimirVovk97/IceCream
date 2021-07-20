@@ -1,4 +1,5 @@
 .contacts-section {
+  font-family: $fontDMSans;
   background-color: $bcg-pink-light;
   @media screen and( min-width: 1200px) {
     // background-image: url(/src/images/contacts-section-1x.png);
@@ -102,6 +103,14 @@
   letter-spacing: 0.04em;
 
   margin: 0 0 10px 0;
+
+  @media screen and( min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and( min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__text {
@@ -148,7 +157,7 @@
   padding: 0;
 }
 
-.dates__item + .dates__item {
+.dates__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -235,21 +244,10 @@
   }
 }
 
-.button {
-  background: $bcg-accent-color;
-  color: $text-primary;
-  border-radius: 22px;
+.button-list__width-dark {
+  padding: 9px 30px;
+}
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3125;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  padding: 9px 17px;
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
+.button-list__width-light {
+  padding: 9px 39px;
 }
