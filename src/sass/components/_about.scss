@@ -82,22 +82,39 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  margin-bottom: 20px;
+  display: block;
+  width: 220px;
+  height: 185px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 35px;
+    width: 340px;
     font-size: 14px;
+    line-height: 1.78;
+    margin-bottom: 60px;
+    letter-spacing: 0.04em;
   }
 }
 
 .container-text__predescription {
   color: $text-secondary;
-  margin-bottom: 35px;
   font-family: $fontDMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
+  display: block;
+  width: 220px;
+  height: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 340px;
     font-size: 14px;
+    line-height: 1.78;
+    margin-bottom: 35px;
   }
 }
 
