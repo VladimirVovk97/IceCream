@@ -1,33 +1,29 @@
 <header class="header-section">
-    <!-- milk -->
-    <picture class="hero-milk">
-        <source srcset="./images/hero-milk-1x.png 1x, ./images/hero-milk-2x.png 2x" media="(min-width: 1200px)">
-        <source srcset="./images/tablet-hero-milk-1x.png 1x, ./images/tablet-hero-milk-2x.png 2x"
-            media="(min-width: 768px)">
-        <!-- <source srcset="../images/mobile-hero-milk-1x.jpg 1x, ../images/mobile-hero-milk-2x.jpg 2x" media="(min-width: 480px)"> -->
-        <img src="./images/hero-milk-1x.png" alt="milk">
-    </picture>
-    <!-- ice-cream -->
-    <picture class="hero-ice-cream">
-        <source srcset="./images/hero-ice-cream-1x.png 1x, ./images/hero-ice-cream-2x.png 2x"
-            media="(min-width: 1200px)">
-        <source srcset="./images/tablet-hero-ice-cream-1x.png 1x, ./images/tablet-hero-ice-cream-2x.png 2x"
-            media="(min-width: 768px)">
-        <source srcset="./images/mobile-hero-ice-cream-1x.png 1x, ./images/mobile-hero-ice-cream-2x.png 2x"
-            media="(max-width: 768px)">
-        <img src="./images/hero-ice-cream-1x.png" alt="ice-cream">
-    </picture>
-    <!-- ice-girl -->
-    <picture class="hero-girl">
-        <source srcset="./images/hero-girl-1x.png 1x, ./images/hero-girl-2x.png 2x" media="(min-width: 1200px)">
-        <source srcset="./images/tablet-hero-girl-1x.png 1x, ./images/tablet-hero-girl-2x.png 2x"
-            media="(min-width: 768px)">
-        <!-- <source srcset="../images/mobile-hero-girl-1x.jpg 1x, ../images/mobile-hero-girl-2x.jpg 2x" media="(min-width: 480px)"> -->
-        <img src="./images/hero-girl-1x.png" alt="girl">
-    </picture>
-    <!-- elipse -->
-    <div class="hero-elipse">
-    </div>
+            <!-- milk -->
+            <picture class="hero-milk">
+                <source srcset="./images/hero-milk-1x.png 1x, ./images/hero-milk-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/tablet-hero-milk-1x.png 1x, ./images/tablet-hero-milk-2x.png 2x" media="(min-width: 768px)">
+                <img src="./images/hero-milk-1x.png" alt="milk">
+            </picture>
+            <!-- ice-cream -->
+            <picture class="hero-ice-cream">
+                <source srcset="./images/hero-ice-cream-1x.png 1x, ./images/hero-ice-cream-2x.png 2x"
+                    media="(min-width: 1280px)">
+                <source srcset="./images/tablet-hero-ice-cream-1x.png 1x, ./images/tablet-hero-ice-cream-2x.png 2x"
+                    media="(min-width: 768px)">
+                <source srcset="./images/mobile-hero-ice-cream-1x.png 1x, ./images/mobile-hero-ice-cream-2x.png 2x"
+                    media="(max-width: 768px)">
+                <img src="./images/hero-ice-cream-1x.png" alt="ice-cream">
+            </picture>
+            <!-- ice-girl -->
+            <picture class="hero-girl">
+                <source srcset="./images/hero-girl-1x.png 1x, ./images/hero-girl-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/tablet-hero-girl-1x.png 1x, ./images/tablet-hero-girl-2x.png 2x" media="(min-width: 768px)">
+                <img src="./images/hero-girl-1x.png" alt="girl">
+            </picture>
+            <!-- elipse -->
+            <div class="hero-elipse">
+            </div>
     <div class="container header">
         <nav class="nav-menu">
             <a href="index.html" class="logo">
@@ -38,7 +34,7 @@
             </a>
             <ul class="site-menu">
                 <li class="site-menu__item">
-                    <a class="site-menu__link" href="">Home</a>
+                    <a class="site-menu__link site-menu__link_active" href="">Home</a>
                 </li>
                 <li class="site-menu__item">
                     <a class="site-menu__link" href="">About us</a>
@@ -53,10 +49,10 @@
                     <a class="site-menu__link" href="">Contact</a>
                 </li>
             </ul>
+            <button type="button" class="header-button">
+                Buy now<span class="symbol-button">></span>
+            </button>
         </nav>
-        <button type="button" class="header-button">
-            Buy now<span class="symbol-button">></span>
-        </button>
         <button type="button" class="burger-menu-open">
             <svg class="icon-burger" width="20" height="12">
                 <use href="./images/symbol-defs.svg#icon-burger"></use>
@@ -65,11 +61,11 @@
         <div class="mobile-menu is-hidden">
             <div class="mobile-nav">
                 <button type="button" class="mobile-menu__button">
-                    Buy now <span> > </span>
+                    Buy now <span class="symbol-button"> > </span>
                 </button>
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">Home</a>
+                        <a href="" class="mobile-menu__link mobile-menu__link_active">Home</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link">About us</a>
@@ -92,25 +88,9 @@
             </button>
         </div>
     </div>
-    </div>
-    </div>
     <div class="container hero">
+    <div class="us-cafes-position">
         <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title_part">passion</span></h1>
-        <ul class="hero-buttons">
-            <li class="hero-buttons__item">
-                <button type="button" class="hero-buttons__link">Products</button>
-            </li>
-            <li class="hero-button-item">
-                <button type="button" class="hero-buttons__link">How it’s made?</button>
-            </li>
-        </ul>
-        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et</p>
-        <div class="icon-place">
-            <svg class="icon-arrow" width="24" height="16">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
-        </div>
         <div class="us-cafes">
             <ul class="us-cafes__list">
                 <li class="us-cafes__item">
@@ -125,5 +105,26 @@
                 </li>
             </ul>
         </div>
+    </div>
+        <ul class="hero-buttons">
+            <li class="hero-buttons__item">
+                <button type="button" class="hero-buttons__link">Products</button>
+            </li>
+            <li class="hero-button-item">
+                <button type="button" class="hero-buttons__link">How it’s made?</button>
+            </li>
+        </ul>
+        <div class="icon-place">
+        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et</p>
+        <a href="">
+            <picture>
+            <source srcset="./images/arrow-right-1x.png 1x, ./images/arrow-right-2x.png 2x" media="(min-width: 1280px)">
+            <source srcset="./images/tablet-arrow-right-1x.png 1x, ./images/tablet-arrow-right-2x.png 2x" media="(min-width: 768px)">
+           <img src="./images/arrow-right-1x.png" alt="arrow-right">
+            </picture>
+        </a>
+        </div>
+        
     </div>
 </header>
