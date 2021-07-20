@@ -82,25 +82,45 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  margin-bottom: 20px;
+  display: block;
+  width: 220px;
+  height: 185px;
+  margin-right: auto;
+  margin-left: auto;
   @media screen and (min-width: 768px) {
-    margin-bottom: 35px;
+    width: 340px;
     font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+    margin-bottom: 62px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 45px;
+    }
   }
 }
-
 .container-text__predescription {
   color: $text-secondary;
-  margin-bottom: 35px;
   font-family: $fontDMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
+  display: block;
+  width: 220px;
+  height: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 340px;
     font-size: 14px;
+    line-height: 1.78;
+    margin-bottom: 35px;
   }
 }
-
+.container-images {
+  margin-bottom: 39px;
+}
 .container-images img {
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -122,49 +142,37 @@
 }
 /* Кнопка */
 .button {
-  background-color: $accent-color;
-  color: $text-primary;
-  font-family: $fontDMSans;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.313;
-  padding: 9px 17px;
+  height: 44px;
+  width: 176px;
   border-radius: 22px;
-  border: none;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-2;
-  }
-}
-.button--light {
+  border-color: transparent;
   background-color: $text-primary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
   color: $accent-color;
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-1;
+  display: block;
+  margin-left: 30px;
+  stroke: $accent-color;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    color: $text-primary;
+    stroke: $text-primary;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 1.31;
   }
 }
-.button--arrow-dark {
-  &::after {
-    content: '';
-    border: solid $accent-color;
-    border-width: 0 2px 2px 0;
-    padding: 3px;
-    transform: rotate(-45deg);
-    margin-left: 12px;
-  }
-}
-.button--arrow-light {
-  &::after {
-    content: '';
-    border: solid $text-primary;
-    border-width: 0 2px 2px 0;
-    padding: 3px;
-    transform: rotate(-45deg);
-    margin-left: 12px;
+.about__icon {
+  margin-left: 13px;
+  fill: $text-primary;
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
   }
 }
