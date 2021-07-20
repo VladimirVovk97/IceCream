@@ -52,10 +52,20 @@
 .slider__img {
   padding-bottom: 29px;
 }
-
+// .slider__nav {
+//   position: relative;
+// }
 .slider__adress {
   padding-top: 52px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.88;
+  color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
+
 .slider__text::before {
   position: absolute;
   left: 61px;
@@ -66,6 +76,24 @@
   background-image: url('../images/commas.svg');
   background-size: 54px 40px;
   opacity: 0.5;
+}
+.slider__nav {
+  position: relative;
+  padding-top: 52px;
+  @media screen and (min-width: 768px) {
+    padding-top: 42px;
+  }
+}
+.slider__adress::before {
+  position: absolute;
+  bottom: 43px;
+  // right: 34px;
+  transform: translateX(60%);
+  content: ' ';
+  width: 32px;
+  height: 4px;
+  background-image: url('../images/review-dots.svg');
+  // fill: #c7133e;
 }
 
 // .slick-slider {
@@ -187,12 +215,12 @@
   font-size: 0;
   width: 10px;
   height: 10px;
-  background-color: red;
+  background-color: #d9d9d9;
   border-radius: 70%;
   border-color: transparent;
 }
 .slider .slick-dots li.slick-active button {
-  background-color: green;
+  background-color: #d31342;
   border-radius: 50%;
-  border-color: blue;
+  // border-color: blue;
 }
