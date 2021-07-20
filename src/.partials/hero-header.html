@@ -1,16 +1,14 @@
 <header class="header-section">
             <!-- milk -->
             <picture class="hero-milk">
-                <source srcset="./images/hero-milk-1x.png 1x, ./images/hero-milk-2x.png 2x" media="(min-width: 1200px)">
-                <source srcset="./images/tablet-hero-milk-1x.png 1x, ./images/tablet-hero-milk-2x.png 2x"
-                    media="(min-width: 768px)">
-                <!-- <source srcset="../images/mobile-hero-milk-1x.jpg 1x, ../images/mobile-hero-milk-2x.jpg 2x" media="(min-width: 480px)"> -->
+                <source srcset="./images/hero-milk-1x.png 1x, ./images/hero-milk-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/tablet-hero-milk-1x.png 1x, ./images/tablet-hero-milk-2x.png 2x" media="(min-width: 768px)">
                 <img src="./images/hero-milk-1x.png" alt="milk">
             </picture>
             <!-- ice-cream -->
             <picture class="hero-ice-cream">
                 <source srcset="./images/hero-ice-cream-1x.png 1x, ./images/hero-ice-cream-2x.png 2x"
-                    media="(min-width: 1200px)">
+                    media="(min-width: 1280px)">
                 <source srcset="./images/tablet-hero-ice-cream-1x.png 1x, ./images/tablet-hero-ice-cream-2x.png 2x"
                     media="(min-width: 768px)">
                 <source srcset="./images/mobile-hero-ice-cream-1x.png 1x, ./images/mobile-hero-ice-cream-2x.png 2x"
@@ -19,10 +17,8 @@
             </picture>
             <!-- ice-girl -->
             <picture class="hero-girl">
-                <source srcset="./images/hero-girl-1x.png 1x, ./images/hero-girl-2x.png 2x" media="(min-width: 1200px)">
-                <source srcset="./images/tablet-hero-girl-1x.png 1x, ./images/tablet-hero-girl-2x.png 2x"
-                    media="(min-width: 768px)">
-                <!-- <source srcset="../images/mobile-hero-girl-1x.jpg 1x, ../images/mobile-hero-girl-2x.jpg 2x" media="(min-width: 480px)"> -->
+                <source srcset="./images/hero-girl-1x.png 1x, ./images/hero-girl-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/tablet-hero-girl-1x.png 1x, ./images/tablet-hero-girl-2x.png 2x" media="(min-width: 768px)">
                 <img src="./images/hero-girl-1x.png" alt="girl">
             </picture>
             <!-- elipse -->
@@ -38,7 +34,7 @@
             </a>
             <ul class="site-menu">
                 <li class="site-menu__item">
-                    <a class="site-menu__link" href="">Home</a>
+                    <a class="site-menu__link site-menu__link_active" href="">Home</a>
                 </li>
                 <li class="site-menu__item">
                     <a class="site-menu__link" href="">About us</a>
@@ -65,11 +61,11 @@
         <div class="mobile-menu is-hidden">
             <div class="mobile-nav">
                 <button type="button" class="mobile-menu__button">
-                    Buy now <span> > </span>
+                    Buy now <span class="symbol-button"> > </span>
                 </button>
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">Home</a>
+                        <a href="" class="mobile-menu__link mobile-menu__link_active">Home</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link">About us</a>
@@ -93,7 +89,7 @@
         </div>
     </div>
     <div class="container hero">
-    <div class="us-cases-position">
+    <div class="us-cafes-position">
         <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title_part">passion</span></h1>
         <div class="us-cafes">
             <ul class="us-cafes__list">
@@ -118,12 +114,16 @@
                 <button type="button" class="hero-buttons__link">How it’s made?</button>
             </li>
         </ul>
+        <div class="icon-place">
         <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et</p>
-        <div class="icon-place">
-            <svg class="icon-arrow" width="24" height="16">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
+        <a href="">
+            <picture>
+            <source srcset="./images/arrow-right-1x.png 1x, ./images/arrow-right-2x.png 2x" media="(min-width: 1280px)">
+            <source srcset="./images/tablet-arrow-right-1x.png 1x, ./images/tablet-arrow-right-2x.png 2x" media="(min-width: 768px)">
+           <img src="./images/arrow-right-1x.png" alt="arrow-right">
+            </picture>
+        </a>
         </div>
         
     </div>
