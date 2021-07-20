@@ -1,0 +1,8 @@
+.container-gallery {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.gallery__picture {
+  width: 100%;
+}

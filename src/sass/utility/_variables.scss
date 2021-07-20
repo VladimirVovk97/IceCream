@@ -1,3 +1,26 @@
+// COLORS
+$text-primary: #ffffff;
+$text-secondary: #000000;
+$accent-color: #d41443;
+$text-third: #907e82;
+$text-decoration: #ffa5ba;
+
+$bcg-white: #ffffff;
+$bcg-pink-light: #fff5f6;
+$bcg-pink: #ffb8ca;
+$bcg-pink-heavy: #e17992;
+$btn-hover-1: #ecebeb;
+$btn-hover-2: #c7133e;
+$bcg-accent-color: #d41342;
+$bcg-brown: #f0d1a5;
+$bcg-green: #c2e297;
+$bcg-btn-hover-light: #ecebeb;
+$border-color: #e1e1e1;
+
+// FONTS STYLES
+$fontDMSans: 'DM Sans', sans-serif;
+$fontTitanOne: 'Titan One', sans-serif;
+
 //COMMON
 .container {
   width: 100%;
@@ -11,8 +34,8 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
   }
 }
 .section {
@@ -24,6 +47,7 @@
   }
 }
 ul {
+  padding: 0;
   list-style: none;
 }
 a .link {
@@ -45,19 +69,3 @@ img {
   height: 1px;
   margin: -1px;
 }
-
-// COLORS
-$text-primary: #ffffff;
-$text-secondary: #000000;
-$accent-color: #d41443;
-$text-third: #907e82;
-$text-decoration: #ffa5ba;
-
-$bcg-white: #ffffff;
-$bcg-pink-light: #fff5f6;
-$bcg-pink: #ffb8ca;
-$bcg-pink-heavy: #e17992;
-
-// FONTS STYLES
-$fontDMSans: 'DM Sans', sans-serif;
-$fontTitanOne: 'Titan One', sans-serif;
