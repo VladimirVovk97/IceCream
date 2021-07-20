@@ -1,79 +1,186 @@
+/* Секция*/
 .section-about {
   background: $bcg-pink-light;
-  padding-top: 125px;
-  padding-bottom: 0;
-}
+  padding-top: 100px;
+  @media screen and (max-width: 768px - 1px) {
+    padding-bottom: 39px;
+  }
 
+  @media screen and (min-width: 768px) and (max-width: 1280px - 1px) {
+    padding-bottom: 66px;
+  }
+}
 .container-about {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   background-position: 0 93%;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url(../images/mobile-cow-background-1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/mobile-cow-background-2x.png);
+  @media screen and (max-width: 768px - 1px) {
+    background-image: url(../images/mobile-cow-background-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile-cow-background-2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/cow-background-1x-min.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/cow-background-2x-min.png);
+    }
+  }
+}
+
+.container-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
   }
 }
 .about__title {
   font-family: $fontTitanOne;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.16;
-  margin-bottom: 15px;
+  line-height: 1.167;
   text-align: center;
   text-transform: uppercase;
-
+  margin-bottom: 15px;
   color: $text-decoration;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
 }
+
 .about__title--details {
   font-family: $fontTitanOne;
-  font-weight: 400;
   font-size: 34px;
-  line-height: 1.14;
+  line-height: 1.147;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
-
   color: $accent-color;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
-.container-text__item {
-  font-family: $fontDMSans;
+
+.container-text__description {
   color: $text-third;
+  font-family: $fontDMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  margin-bottom: 47px;
+  display: block;
+  width: 220px;
+  height: 185px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+  }
 }
-.container-text__description {
-  font-family: $fontDMSans;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  margin-top: 46px;
-  margin-bottom: 47px;
 
+.container-text__predescription {
   color: $text-secondary;
+  font-family: $fontDMSans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  display: block;
+  width: 220px;
+  height: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.78;
+    margin-bottom: 35px;
+  }
 }
 
-.container-button {
-  background-color: $bcg-white;
-  color: $accent-color;
+.container-images img {
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+    margin-right: 74px;
+  }
+}
+
+.container-text {
+  @media screen and (min-width: 768px) {
+    margin-left: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
+}
+/* Кнопка */
+.button {
+  background-color: $accent-color;
+  color: $text-primary;
   font-family: $fontDMSans;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.313;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 9px 17px;
   border-radius: 22px;
-  min-width: 160px;
-  border: 0px solid transparent;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-2;
+  }
+}
+.button--light {
+  background-color: $text-primary;
+  color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-1;
+  }
+}
+.button--arrow-dark {
+  &::after {
+    content: '';
+    border: solid $accent-color;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 12px;
+  }
+}
+.button--arrow-light {
+  &::after {
+    content: '';
+    border: solid $text-primary;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 12px;
+  }
 }

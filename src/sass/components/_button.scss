@@ -1,0 +1,58 @@
+.button {
+  background: $bcg-accent-color;
+  color: $text-primary;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 9px 37px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $bcg-accent-color;
+  }
+}
+
+.button--light {
+  background-color: $text-primary;
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $bcg-btn-hover-light;
+  }
+}
+
+// Кнопки со стрелкой
+.button--arrow-light {
+  &::after {
+    content: '';
+    border: solid $text-primary;
+    border-width: 0 2px 2px 0;
+
+    margin-left: 12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+}
+
+.button--arrow-dark {
+  &::after {
+    content: '';
+    border: solid $accent-color;
+    border-width: 0 2px 2px 0;
+
+    margin-left: 12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+}
