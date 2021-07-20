@@ -38,16 +38,16 @@
   }
 }
 
-.slider__wraper::before {
-  position: absolute;
-  content: ' ';
-  background-image: url('../images/person-1-1x.png');
-  width: 85px;
-  height: 85px;
-  top: 43px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// .slider__wraper::before {
+//   position: absolute;
+//   content: ' ';
+//   background-image: url('../images/person-1-1x.png');
+//   width: 85px;
+//   height: 85px;
+//   top: 43px;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
 .slider__text {
   display: inline-flex;
@@ -85,9 +85,17 @@
 
 .slider__img {
   padding-bottom: 29px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
+  width: 85px;
 }
+// .slider__img {
 
+//   height: 85px;
+// }
 .slider__adress {
   display: flex;
   justify-content: center;
