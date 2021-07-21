@@ -93,7 +93,7 @@ margin-left: 341px;
   &:hover,&focus{
     background-color: $text-third;
   }
-  animation: animate125 3000ms infinite 1000ms;
+  animation: animate125 5000ms infinite 1000ms;
 }
 @keyframes animate125 {
   0% {
@@ -422,19 +422,19 @@ line-height: 1.25;
     width: 236px;
     height: 557px;
     left: 594px;
-    bottom: 0;
   }
-  animation: animateY110 3000ms infinite 1000ms;
+  animation: animateY110 5000ms infinite 100ms;
+  animation-iteration-count:0.5;
 }
 @keyframes animateY110 {
   0% {
-    transform: translateY(0);
+    transform: translateY(610px);
   }
 50% {
-    transform: translateY(110px);
+    transform: translateY(0);
   }
 100% {
-    transform: translateY(0);
+    transform: translateY(610px);
   }
 }
 .hero-girl {
@@ -455,17 +455,18 @@ line-height: 1.25;
     left: 878px;
     bottom: 0;
   }
-  animation: animateX50Y100 3000ms infinite 1000ms;
+  
+  animation: animateX50 8000ms infinite 1000ms;
 }
-@keyframes animateX50Y100 {
+@keyframes animateX50 {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0px);
   }
 50% {
-    transform: translate(-50px, -100px);
+    transform: translateX(90px);
   }
 100% {
-    transform: translate(0, 0);
+    transform: translateX(0px);
   }
 }
 .hero-milk {
@@ -486,17 +487,18 @@ line-height: 1.25;
     left: 77px;
     top: 429px;
   }
-  animation: animateX50 3000ms infinite 1000ms;
+  animation: rotation 300ms infinite 1000ms;
 }
-@keyframes animateX50 {
+
+@keyframes rotation {
   0% {
-    transform: translateX(0);
+    transform: rotation(0deg);
   }
 50% {
-    transform: translateX(50px);
+    transform: rotation(50deg);
   }
 100% {
-    transform: translateX(0);
+    transform: rotation(0deg);
   }
 }
 .hero-elipse {
@@ -518,5 +520,18 @@ line-height: 1.25;
     height: 538px;
     left: 475px;
     top: 52px;
+  }
+  animation: scale 2000ms infinite 10ms;
+  animation-iteration-count:1;
+}
+@keyframes scale {
+0% {
+    transform: scale(0);
+  }
+50% {
+    transform: scale(0);
+  }
+100% {
+    transform: scale(1);
   }
 }
