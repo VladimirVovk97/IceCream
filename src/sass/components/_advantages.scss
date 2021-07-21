@@ -1,6 +1,7 @@
 @import '../utility/variables';
 .advantages-section{
     background-color: $bcg-pink-light;
+margin: 50px 0;
    @media (min-width: 768px) {
        display: flex;
        justify-content: center;
@@ -59,7 +60,7 @@
     }
 }
 .advantages__title{
-    font-family: $fontTitanOne;
+    font-family: Titan One;
 font-size: 36px;
 line-height: 41px;
 letter-spacing: 0.04em;
@@ -80,20 +81,20 @@ margin: 16px 0 16px 0;
 }
 
 .advantages__text{
-    font-family: $fontDMSans;
-font-weight: 700;
+    font-family: DM Sans;
+font-weight: bold;
 font-size: 12px;
-line-height: 20px;
+line-height: 170%;
 @media (min-width:480px) {
     
 font-size: 14px;
-line-height: 25px;
+line-height: 174%;
     
 }
 @media (min-width:480px) {
     
 font-size: 16px;
-line-height: 25px;
+line-height: 176%;
         
     }
 }
