@@ -45,6 +45,15 @@
   @media screen and (min-width: 1280px) {
     margin-right: 110px;
   }
+  animation: rotateY 4000ms infinite alternate ease-in-out 3000ms;
+}
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+100% {
+    transform: perspective(400px) rotateY(360deg);
+  }
 }
 .site-menu {
   display: flex;
@@ -312,7 +321,6 @@ color: $text-primary;
   }
   @media screen and (min-width: 768px) and (max-width: 1280px) {
   margin-left: 134px;
-
 }
   @media screen and (min-width: 1280px) {
   margin-left: 225px;

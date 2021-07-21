@@ -26,7 +26,7 @@
                         alt="logo" width="199px" height="50px">
                 </picture>
             </a>
-            <ul class="site-menu">
+            <ul class="site-menu">  
                 <li class="site-menu__item">
                     <a class="site-menu__link site-menu__link_active" href="#">Home</a>
                 </li>
@@ -43,9 +43,11 @@
                     <a class="site-menu__link" href="#Contact">Contact</a>
                 </li>
             </ul>
-            <button type="button" class="header-button">
+            <a href="#openModal">
+            <button name="#openModal" class="header-button" type="button">
                 Buy now<span class="symbol-button">></span>
             </button>
+        </a>
         </nav>
         <button type="button" class="burger-menu-open">
             <svg class="icon-burger" width="20" height="12">
@@ -54,9 +56,11 @@
         </button>
         <div class="mobile-menu is-hidden">
             <div class="mobile-nav">
+                <a href="#openModal">
                 <button type="button" class="mobile-menu__button">
                     Buy now <span class="symbol-button"> > </span>
                 </button>
+            </a>
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link mobile-menu__link_active">Home</a>
@@ -102,10 +106,10 @@
     </div>
         <ul class="hero-buttons">
             <li class="hero-buttons__item">
-                <button type="button" class="hero-buttons__link">Products</button>
+                <button type="button" class="hero-buttons__link" onclick="document.location='#Product'">Products</button>
             </li>
             <li class="hero-buttons__item">
-                <button type="button" class="hero-buttons__link">How it’s made?</button>
+                <button type="button" class="hero-buttons__link" onclick="document.location='#How it’s made?'">How it’s made?</button>
             </li>
         </ul>
         <div class="icon-place">
@@ -117,14 +121,27 @@
             </picture>
         <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et</p>
-        <a href="">
-            <picture>
+        <a href="#Product">
+            <picture class="arrow-right-hero">
             <source srcset="./images/arrow-right-1x.png 1x, ./images/arrow-right-2x.png 2x" media="(min-width: 1280px)">
             <source srcset="./images/tablet-arrow-right-1x.png 1x, ./images/tablet-arrow-right-2x.png 2x" media="(min-width: 768px)">
            <img src="./images/arrow-right-1x.png" alt="arrow-right">
             </picture>
         </a>
         </div>
-        
     </div>
+    <!-- omlkpmojooj -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Why don't you freshen up?</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Содержимое модального окна...</p>
+            </div>
+          </div>
+        </div>
+      </div>
 </header>
