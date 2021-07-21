@@ -1,98 +1,149 @@
-
-  
-/* свойства модального окна по умолчанию */
-.modal {
+.buy-modal-open{
+   max-width: 0%;
+  }
+  .buy-modal{
+      width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed; /* фиксированное положение */
-    background: rgba(0,0,0,0.5); /* цвет фона */
+    position: fixed; 
+    background: $buy-modal; 
     z-index: 1050;
-    opacity: 0; /* по умолчанию модальное окно прозрачно */
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: none; /* элемент невидим для событий мыши */
+    opacity: 0; 
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
     margin: 0;
     padding: 0;
+    @media (max-width: 460px) {
+    top: 10%;
+    }
+  }
+
+.buy-modal:target {
+    opacity: 1; 
+	  pointer-events: auto; 
 }
-/* при отображении модального окно */
-.modal:target {
-    opacity: 1; /* делаем окно видимым */
-	  pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
 .modal-dialog {
     position: absolute;
-    width: 60%;
+    width: 80%;
+    height: 80%;
 
 }
-// @media (min-width: px) {
-//   .modal-dialog {
-//       max-width: 500px;
-//       margin: 30px auto; /* для отображения модального окна по центру */
-//   }
-// }
-/* свойства для блока, содержащего контент модального окна */ 
+@media (min-width: 380px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto;
+  }
+}
+
 .modal-content {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: $bcg-btn-hover-light;
+    opacity: 0.90;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 3px solid $btn-hover-2;
     border-radius: .3rem;
     outline: 0;
 }
-
   .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      display: flex;
+      align-items: center;
+      box-shadow: 0 5px 15px $buy-modal;
   }
-/* свойства для заголовка модального окна */
 .modal-header {
-   
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-bottom: 1px solid #eceeef;
 }
-.modal-title {
+.buy-modal-title {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.5;
     font-size: 1.25rem;
-    font-weight: 500;
-}
-/* свойства для кнопки "Закрыть" */
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
     font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
+    color: $bcg-accent-color;
+}
+.close {
+    position: absolute;
+    right:1%;
+    top: -3%;
+    font-family: $fontTitanOne;
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-secondary;
+    text-shadow: 0 1px 0 $text-primary;
     opacity: .5;
     text-decoration: none;
-}
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-.close:focus, .close:hover {
-    color: #000;
+    
+&:focus, &:hover {
+    color: $accent-color;
     text-decoration: none;
     cursor: pointer;
     opacity: .75;
 }
-/* свойства для блока, содержащего основное содержимое окна */
-.modal-body {
-//   position: relative;
-  width: 90%;
-  height: 300px;
 }
-//     -webkit-box-flex: 1;
-//     -webkit-flex: 1 1 auto;
-//     -ms-flex: 1 1 auto;
-//     flex: 1 1 auto;
-//     padding: 15px;
-//     overflow: auto;
-// }
+.buy-modal-body {
+  position: relative;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+  width: 90%;
+  height: 400px;
+}
+.buy-modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-form__place{
+    width: 80%;
+}
+.modal-form__place label{
+    display: flex;
+    justify-content: center;
+}
+.modal-form__input-form{
+    display: flex;
+    justify-content: center;
+}
+.modal-form__input{
+    width: 80%;
+}
+.buy-modal-img-list{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.buy-modal-img{
+    display: flex;
+    width: 30%;
+    height:30%;
+}
+.checkbox-place{
+width: 30%;
+}
+.checkbox-place__label{
+width: 30%;
+}
+input[type="checkbox"] {
+    position: absolute;
+    top: 190px;
+  }
+.modal-form__button-send{
+    width: 160px;
+  height: 44px;
+  border: 1px solid $bcg-pink-heavy;
+  border-radius:22px;
+  font-family: $fontDMSans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 30px;
+  cursor: pointer;
+  &:hover, &:focus{
+    background-color: $bcg-accent-color;
+  }
+}

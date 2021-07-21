@@ -23,7 +23,7 @@
             <a href="index.html" class="logo">
                 <picture>
                     <img src="./images/logo-1x.png" srcset="./images/logo-1x.png 1x, ./images/logo-1x.png 2x"
-                        alt="logo" width="199px" height="50px">
+                        alt="logo" width="199" height="50">
                 </picture>
             </a>
             <ul class="site-menu">  
@@ -43,11 +43,11 @@
                     <a class="site-menu__link" href="#Contact">Contact</a>
                 </li>
             </ul>
-            <a href="#openModal">
-            <button name="#openModal" class="header-button" type="button">
+        
+            <button class="header-button" type="button" onclick="document.location='#openModal'">
                 Buy now<span class="symbol-button">></span>
             </button>
-        </a>
+        
         </nav>
         <button type="button" class="burger-menu-open">
             <svg class="icon-burger" width="20" height="12">
@@ -56,11 +56,9 @@
         </button>
         <div class="mobile-menu is-hidden">
             <div class="mobile-nav">
-                <a href="#openModal">
-                <button type="button" class="mobile-menu__button">
+                <button type="button" class="mobile-menu__button" onclick="document.location='#openModal'">
                     Buy now <span class="symbol-button"> > </span>
                 </button>
-            </a>
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link mobile-menu__link_active">Home</a>
@@ -131,15 +129,104 @@
         </div>
     </div>
     <!-- omlkpmojooj -->
-    <div id="openModal" class="modal">
+    <div id="openModal" class="modal buy-modal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="modal-title">Why don't you freshen up?</h3>
+              <h3 class="buy-modal-title">Why don't you freshen up?</h3>
               <a href="#close" title="Close" class="close">×</a>
             </div>
-            <div class="modal-body">    
-              <p>Содержимое модального окна...</p>
+            <div class="buy-modal-body"> 
+                <form class="buy-modal-form">
+                    <div class="modal-form__place">
+                        <label>Your name</label>
+                    <div class="modal-form__input-form">
+                        <input class="modal-form__input" type="text" name="username" autofocus>
+                    </div>
+                    </div>
+                    <div class="modal-form__place">
+                        <label>Your phone</label>
+                    <div class="modal-form__input-form">
+                        <input class="modal-form__input" type="tel" name="tel">
+                    </div>
+                    </div>
+                    <div class="modal-form__place">
+                        <label>Your e-mail</label>
+                    <div class="modal-form__input-form">
+                        <input  class="modal-form__input" type="email" name="email">
+                    </div>
+                    </div>
+                    <div class="buy-modal-img-list"> 
+                    <div class="checkbox-place">
+                        <label class="checkbox-place__label">
+                        <input class="checkbox-place__input" type="checkbox">
+                        <picture class="buy-modal-img-list__item">
+                            <source
+                              srcset="./images/ice-cream-1x.png 1x, ./images/ice-cream-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 1280px)"
+                            />
+                            <source
+                              srcset="./images/tablet-ice-cream-1x.png 1x, ./images/tablet-ice-cream-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                              srcset="./images/mobile-ice-cream-1x.png 1x, ./images/mobile-ice-cream-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 480px)"
+                            />
+                            <img src="./images/ice-cream-1x.png" alt="ice cream"/>
+                        </picture>
+                    </label>
+                    </div>
+                    <label class="checkbox-place__label">
+                        <input class="checkbox-place__input" type="checkbox">
+                        <picture class="buy-modal-img-list__item">
+                            <source
+                              srcset="./images/ice-coffee-1x.png 1x, ./images/ice-coffee-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 1280px)"
+                            />
+                            <source
+                              srcset="./images/tablet-ice-coffee-1x.png 1x, ./images/tablet-ice-coffee-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                              srcset="./images/mobile-ice-coffee-1x.png 1x, ./images/mobile-ice-coffee-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 480px)"
+                            />
+                            <img src="./images/ice-coffee-1x.png" alt="ice cream"/>
+                        </picture>
+                    </label>
+                    <label class="checkbox-place__label">
+                        <input class="checkbox-place__input" type="checkbox">
+                        <picture class="buy-modal-img-list__item">
+                            <source
+                              srcset="./images/milkshakes-1x.png 1x, ./images/milkshakes-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 1280px)"
+                            />
+                            <source
+                              srcset="./images/tablet-milkshakes-1x.png 1x, ./images/tablet-milkshakes-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                              srcset="./images/mobile-milkshakes-1x.png 1x, ./images/mobile-milkshakes-2x.png 2x"
+                              type="image/webp"
+                              media="(min-width: 480px)"
+                            />
+                            <img src="./images/milkshakes-1x.png" alt="ice cream"/>
+                        </picture>
+                    </label>
+                    </div>
+                        <button class="modal-form__button-send " type="submit">
+                            Make an order
+                        </button>
+                    </form>
             </div>
           </div>
         </div>
