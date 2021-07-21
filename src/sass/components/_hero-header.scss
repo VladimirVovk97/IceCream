@@ -24,9 +24,11 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-top: 15px;
+    margin-bottom: 34px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 84px;
+    margin-bottom: 56px;
   }
 }
 .nav-menu {
@@ -81,6 +83,9 @@
   line-height: 1.3;
 background-color: $bcg-white;
 color: $accent-color;
+&:hover,&:focus{
+  background-color: $btn-hover-1;
+}
   @media screen and (max-width: 767px) {
   display: none;
   }
@@ -89,9 +94,6 @@ margin-left: 341px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 115px;
-  }
-  &:hover,&focus{
-    background-color: $text-third;
   }
   animation: animate125 5000ms infinite 1000ms;
 }
@@ -140,6 +142,9 @@ margin-left: 12px;
   color: $accent-color;
   border-radius: 22px;
   border: none;
+  &:hover, &:focus{
+    background-color: $btn-hover-1;
+  }
 }
 .mobile-menu__list {
   padding-left: 0;
@@ -243,7 +248,23 @@ margin-left: 12px;
     margin-right: 8px;
   }
 }
-.hero-buttons__link {
+.hero-buttons__item:last-child .hero-buttons__link {
+  color: $accent-color;
+  background: $bcg-white;
+&:hover, &:focus{
+background-color: $btn-hover-1;
+color: $accent-color;
+}
+}
+.hero-buttons__item:first-child .hero-buttons__link {
+  color: $bcg-white;
+  background: $accent-color;
+&:hover, &:focus{
+background-color: $btn-hover-2;
+color: $text-primary;
+}
+}
+.hero-buttons__link{
   font-family: $fontDMSans;
   font-weight: 400;
   font-size: 8px;
@@ -251,12 +272,7 @@ margin-left: 12px;
   padding: 6px;
   border-radius: 20px;
   border: none;
-  cursor: pointer;
-  color: $accent-color;
-  background: $bcg-white;
-&:hover, &:focus{
-background-color: $accent-color;
-color: $text-primary;}
+  cursor: pointer;  
 @media screen and (min-width: 768px) and (max-width: 1280px){
   padding: 9px 20px;
 }
@@ -291,24 +307,16 @@ color: $text-primary;}
   }
 }
 .icon-place{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) and (max-width: 1280px) {
   margin-left: 134px;
-  margin-bottom: 34px;
+
 }
   @media screen and (min-width: 1280px) {
   margin-left: 225px;
-  margin-bottom: 56px;
 }
-}
-.icon-place {
-@media screen and (max-width: 768px) {
-    display: none;
-  }
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-
-  }
-@media screen and (min-width: 1280px) {
-  }
 }
 // US-CAFES
 .us-cafes-position{
@@ -456,14 +464,14 @@ line-height: 1.25;
     bottom: 0;
   }
   
-  animation: animateX50 8000ms infinite 1000ms;
+  animation: animateX50 7000ms infinite 1000ms;
 }
 @keyframes animateX50 {
   0% {
     transform: translateX(0px);
   }
 50% {
-    transform: translateX(90px);
+    transform: translateX(-50px);
   }
 100% {
     transform: translateX(0px);
@@ -479,26 +487,27 @@ line-height: 1.25;
     width: 124px;
     height: 126px;
     left: 34px;
-    bottom: 28px;
+    bottom: -6px;
   }
   @media screen and (min-width: 1280px) {
     width: 188px;
     height: 191px;
-    left: 77px;
-    top: 429px;
+    left: 50px;
+    bottom: -6px;
   }
-  animation: rotation 300ms infinite 1000ms;
+  animation: animateX60 3000ms infinite 100ms;
+  animation-iteration-count:0.5;
 }
 
-@keyframes rotation {
+@keyframes animateX60 {
   0% {
-    transform: rotation(0deg);
+    transform: translateX(-400px);
   }
 50% {
-    transform: rotation(50deg);
+    transform: translateX(0px);
   }
 100% {
-    transform: rotation(0deg);
+    transform: translateX(0px);
   }
 }
 .hero-elipse {
