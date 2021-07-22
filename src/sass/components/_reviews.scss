@@ -1,4 +1,5 @@
 .container--reviews {
+  background-color: $bcg-white;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-left: 74px;
     padding-right: 74px;
@@ -38,17 +39,6 @@
   }
 }
 
-// .slider__wraper::before {
-//   position: absolute;
-//   content: ' ';
-//   background-image: url('../images/person-1-1x.png');
-//   width: 85px;
-//   height: 85px;
-//   top: 43px;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
 .slider__text {
   display: inline-flex;
   align-items: center;
@@ -58,24 +48,17 @@
   line-height: 2.55;
   letter-spacing: 0.03em;
   text-align: center;
-  background-image: repeating-linear-gradient(
-    to top,
-    #e1e1e1,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px
-  );
+  // background-image: repeating-linear-gradient(
+  //   to top,
+  //   #e1e1e1,
+  //   #e1e1e1 1px,
+  //   transparent 1px,
+  //   transparent 31px
+  // );
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
     letter-spacing: 0.03em;
     padding-top: 3px;
-    // background: repeating-linear-gradient(
-    //   to top,
-    //   transparent,
-    //   transparent 1px,
-    //   #e1e1e1 30px,
-    //   #e1e1e1 31px
-    // );
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
@@ -92,10 +75,7 @@
   display: block;
   width: 85px;
 }
-// .slider__img {
 
-//   height: 85px;
-// }
 .slider__adress {
   display: flex;
   justify-content: center;

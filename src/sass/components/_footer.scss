@@ -1,30 +1,35 @@
-@import '../utility/variables';
-footer {
-  background-color: $bcg-pink-light;
-}
 .section--mobile {
-  flex-wrap: wrap;
   justify-content: center;
   min-width: 320px;
   padding: 60px 20px 0 20px;
-  @media (min-width: 1280px) {
+  background-color: $bcg-pink-light;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1280px) {
     padding: 90px 114px 0 114px;
   }
   .footer {
-    @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+
+    @media screen and (min-width: 768px) {
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
     }
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       max-width: 1280px;
+      justify-content: space-between;
     }
   }
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -35,81 +40,67 @@ footer {
 .company-description {
   padding: 0;
   width: 234px;
-  @media (max-width: 479px) {
+  @media screen and (max-width: 479px) {
     margin: 0;
   }
-  @media (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     margin-bottom: 91px;
     width: 340px;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     width: 474px;
   }
   &__text--first {
     font-family: $fontTitanOne;
     font-size: 18px;
     line-height: 21px;
-    @media (min-width: 480px) {
+    @media screen and (min-width: 480px) {
       font-size: 26px;
       line-height: 30px;
       letter-spacing: 0.04em;
     }
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 34px;
     }
 
-    &__text--first {
-      font-family: $fontTitanOne;
-      font-size: 18px;
-      line-height: 21px;
-      @media (min-width: 480px) {
-        font-size: 26px;
-        line-height: 30px;
-        letter-spacing: 0.04em;
-      }
-      @media (min-width: 1280px) {
-        font-size: 30px;
-        line-height: 34px;
-      }
-      text-transform: uppercase;
-      color: $text-decoration;
+    text-transform: uppercase;
+    color: $text-decoration;
+  }
+  &__text--second {
+    font-family: $fontTitanOne;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    @media screen and (min-width: 480px) {
+      font-size: 48px;
+      line-height: 55px;
+      letter-spacing: 0.06em;
     }
-    &__text--second {
-      font-family: $fontTitanOne;
-      font-size: 34px;
-      line-height: 39px;
-      letter-spacing: 0.04em;
-      @media (min-width: 480px) {
-        font-size: 48px;
-        line-height: 55px;
-        letter-spacing: 0.06em;
-      }
-      @media (min-width: 1280px) {
-        font-size: 58px;
-        line-height: 66px;
-      }
-      text-transform: uppercase;
-      color: $accent-color;
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 66px;
     }
+    text-transform: uppercase;
+    color: $accent-color;
   }
 }
 .social {
   margin-top: 0;
+  display: flex;
+  justify-content: flex-end;
   @media (max-width: 479px) {
     margin: 46px 0;
   }
-  @media (min-width: 480px) {
-    margin: 0 0 46px 0;
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    margin-bottom: 46px;
   }
 
-  display: flex;
-  justify-content: flex-end;
   &__item {
     height: 32px;
-    @media (min-width: 480px) {
+    @media screen and (min-width: 480px) {
       height: 32px;
-      // margin: 1px 0;
     }
     &:not(:last-child) {
       margin-right: 28px;

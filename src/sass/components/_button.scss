@@ -1,5 +1,5 @@
 .button {
-  background: $bcg-accent-color;
+  background-color: $bcg-accent-color;
   color: $text-primary;
   border-radius: 22px;
 
@@ -36,8 +36,8 @@
 .button--arrow-light {
   &::after {
     content: '';
-    border: solid $text-primary;
-    border-width: 0 2px 2px 0;
+    border: 2px solid $text-primary;
+    // border-width: 0 2px 2px 0;
 
     margin-left: 12px;
     padding: 3px;
