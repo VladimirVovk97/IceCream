@@ -10,6 +10,7 @@
 }
 .header {
   position: relative;
+  z-index: 10;
   @media screen and (max-width: 1280px) {
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,7 @@
   height: 50px;
   width:199px;
   height:50px;
+  z-index: 100;
   @media screen and (min-width: 1280px) {
     margin-right: 110px;
   }
@@ -98,6 +100,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
+  z-index: 40;
 background-color: $bcg-white;
 color: $accent-color;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -439,8 +442,8 @@ line-height: 1.25;
   position: absolute;
   width: 410px;
   left: 117px;
-  bottom: 0;
-  z-index: 1;
+  bottom: -160px;
+  z-index: -1;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     width: 143px;
@@ -535,22 +538,25 @@ line-height: 1.25;
 .hero-elipse {
   position: absolute;
   left: 36px;
-  top: 83px;
+  // top: 83px;
+  bottom: -77px;
   width: 346px;
   height: 344px;
   background: $text-decoration;
   border-radius: 50%;
+  z-index: -1;
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
     left: 307px;
-    top: 31px;
+    // top: 31px;
+    bottom: 30px;
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
     left: 475px;
-    top: 52px;
+    // top: 52px;
   }
   animation: scale 2000ms infinite 10ms;
   animation-iteration-count:1;
