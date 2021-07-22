@@ -1,17 +1,20 @@
 .gallery {
-  background: linear-gradient($bcg-pink-light 40%, $bcg-white 1%);
+  background: linear-gradient($bcg-pink-light 45%, $bcg-white 1%);
   width: 100%;
   height: 101px;
 
   @media screen and( min-width: 480px) {
-    height: 202px;
+    height: 212px;
+    padding-top: 10px;
   }
   @media screen and( min-width: 768px) {
-    height: 385px;
+    height: 405px;
+    padding-top: 20px;
   }
 
   @media screen and( min-width: 1280px) {
-    height: 553px;
+    height: 593px;
+    padding-top: 40px;
   }
 }
 .container-gallery {
@@ -152,6 +155,7 @@
 
   @media screen and( min-width: 480px) and( max-width: 767px) {
     width: 50px;
+    animation: animate125 3000ms infinite 1000ms;
 
     &:nth-child(1) {
       top: 60px;
@@ -206,6 +210,7 @@
 
   @media screen and( max-width: 479px) {
     width: 25px;
+    animation: animate125 3000ms infinite 1000ms;
 
     &:nth-child(1) {
       top: 23px;
