@@ -26,6 +26,7 @@
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
+      padding: 0 30px;
     }
     @media screen and (min-width: 1280px) {
       max-width: 1280px;
@@ -103,7 +104,13 @@
     margin: 0;
     margin-bottom: 46px;
   }
-
+  .icon__prop {
+    transition: fill 250ms linear;
+    fill: $text-decoration;
+  }
+  .icon__prop:hover {
+    fill: $accent-color;
+  }
   &__item {
     height: 32px;
     @media screen and (min-width: 768px) {
@@ -113,6 +120,7 @@
       margin-right: 28px;
     }
   }
+
   &__icon {
     width: 32px;
     height: 32px;
@@ -156,6 +164,10 @@
   &__number {
     margin-left: 2px;
     color: $accent-color;
+    text-decoration: none;
+  }
+  &__number:hover {
+    text-decoration: underline;
   }
 }
 
