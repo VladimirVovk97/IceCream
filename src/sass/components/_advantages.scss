@@ -14,14 +14,49 @@ h4 {
 }
 body {
   background-color: $bcg-pink-light;
-  @media (max-width: 479px) {
+}
+@keyframes change-icon-size {
+  //   0% {
+  //     background-size: 30px;
+  //     background-size: 30px;
+  //     width: 50px;
+  //     height: 55px;
+  //   }
+
+  //   50% {
+  //     background-size: 60px;
+  //     background-size: 60px;
+  //     width: 60px;
+  //     height: 65px;
+  //   }
+
+  //   100% {
+  //     background-size: 30px;
+  //     background-size: 30px;
+  //     width: 50px;
+  //     height: 55px;
+  //   }
+
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .advantages__title {
   margin-bottom: 15px;
 }
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .advantages {
+    max-width: 320px;
+    @media (min-width: 480px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
     margin-left: 20px;
     margin-right: auto;
     margin-bottom: 70px;
@@ -51,8 +86,15 @@ body {
     }
   }
 }
-@media (min-width: 480px) {
+
+@media (min-width: 768px) {
+  .advantages-section {
+    // margin-top: 60px;
+  }
   .advantages {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     // margin-top: 152px;
     // margin-bottom: 70px;
     padding: 70px 30px;
@@ -83,11 +125,11 @@ body {
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .advantages {
     display: flex;
     justify-content: center;
-
+    max-width: 1000px;
     &__item {
       position: relative;
       width: calc((100% - 180px) / 3);
@@ -114,7 +156,15 @@ body {
     }
   }
 }
-
+@media (min-width: 768px) {
+  .advantages__title {
+    animation-name: change-icon-size;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+}
 .one::before {
   position: absolute;
   content: '';
@@ -122,10 +172,10 @@ body {
   height: 50px;
   // top: auto;
   top: 0px;
-  @media (max-width: 479px) {
+  @media (max-width: 767px) {
     top: -80px;
   }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     top: -70px;
   }
 
@@ -149,10 +199,10 @@ body {
   height: 50px;
   // top: auto;
   top: 0px;
-  @media (max-width: 479px) {
+  @media (max-width: 767px) {
     top: -80px;
   }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     top: -70px;
   }
 
@@ -175,10 +225,10 @@ body {
   height: 50px;
   // top: auto ;
   top: 0px;
-  @media (max-width: 479px) {
+  @media (max-width: 767px) {
     top: -80px;
   }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     top: -70px;
   }
 
