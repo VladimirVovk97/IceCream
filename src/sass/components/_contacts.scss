@@ -229,6 +229,68 @@
   }
 }
 
+// Button
+
+.button-location {
+  background-color: $bcg-accent-color;
+  color: $text-primary;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 9px 37px;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $bcg-accent-color;
+  }
+}
+
+.button-location--light {
+  background-color: $text-primary;
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $bcg-btn-hover-light;
+    color: $accent-color;
+  }
+}
+
+// Кнопки со стрелкой
+.button-location--arrow-light {
+  &::after {
+    content: '';
+    border: solid $text-primary;
+    border-width: 0 2px 2px 0;
+
+    margin-left: 12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+}
+
+.button-location--arrow-dark {
+  &::after {
+    content: '';
+    border: solid $accent-color;
+    border-width: 0 2px 2px 0;
+
+    margin-left: 12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+}
+
 .button-list {
   display: flex;
   align-items: center;
@@ -257,6 +319,8 @@
 .button-list__width-light {
   padding: 9px 39px;
 }
+
+// Backdrop
 
 .backdrop {
   position: fixed;
