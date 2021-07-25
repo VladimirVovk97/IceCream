@@ -44,6 +44,7 @@
 
   padding: 43px 20px;
   margin: 0 auto;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 767px) {
     margin-bottom: 20px;
@@ -103,6 +104,12 @@
 
     width: 130px;
     height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 5px rgb(212 20 67 / 20%);
+    transform: scale(105%);
   }
 }
 
@@ -227,9 +234,24 @@
     font-size: 16px;
     line-height: 1.83;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 // Button
+
+// .button-list__item {
+//   transition: all 0.3s ease-in-out;
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0 0 20px 5px rgb(212 20 67 / 20%);
+//     transform: scale(105%);
+//   }
+// }
 
 .button-location {
   background-color: $bcg-accent-color;
