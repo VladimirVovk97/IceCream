@@ -3,6 +3,9 @@
   }
   .buy-modal{
       width: 100%;
+      @media (min-width: 768px) {  
+      height: 100%;
+      }
     display: flex;
     justify-content: center;
     align-items: center;
