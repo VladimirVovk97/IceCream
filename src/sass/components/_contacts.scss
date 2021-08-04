@@ -260,16 +260,27 @@
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3125;
+  line-height: 1.31;
 
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
-  padding: 9px 37px;
+  width: 161px;
+  padding: 12px 17px;
 
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    padding: 9px 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 192px;
+    padding: 9px 32px;
+  }
 
   &:hover,
   &:focus {
@@ -295,7 +306,7 @@
     border: solid $text-primary;
     border-width: 0 2px 2px 0;
 
-    margin-left: 12px;
+    margin-left: 10px;
     padding: 3px;
     transform: rotate(-45deg);
   }
@@ -307,7 +318,7 @@
     border: solid $accent-color;
     border-width: 0 2px 2px 0;
 
-    margin-left: 12px;
+    margin-left: 10px;
     padding: 3px;
     transform: rotate(-45deg);
   }
@@ -334,13 +345,13 @@
   }
 }
 
-.button-list__width-dark {
-  padding: 9px 35px;
-}
+// .button-list__width-dark {
+//   padding: 9px 35px;
+// }
 
-.button-list__width-light {
-  padding: 9px 39px;
-}
+// .button-list__width-light {
+//   padding: 9px 39px;
+// }
 
 // Backdrop
 
@@ -379,6 +390,7 @@
   position: relative;
   top: 50%;
   left: 50%;
+  // border: 40px solid $bcg-pink-heavy;
   transform: translate(-50%, -50%) scale(1);
 
   @media (min-width: 450px) {
@@ -417,18 +429,47 @@
   justify-content: center;
   align-items: center;
 
-  background: $bcg-white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 40%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  border: transparent;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  fill: $text-primary;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     cursor: pointer;
     color: $bcg-pink;
+    fill: $bcg-accent-color;
   }
 }
 
-.modal__icon {
-  fill: $text-secondary;
+// .modal__icon {
+//   fill: $text-secondary;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     fill: $bcg-pink-heavy;
+//   }
+// }
+
+.modal__address {
+  border: 40px solid $bcg-pink-heavy;
+}
+
+.modal__iframe {
+  width: 100%;
+
+  @media (min-width: 450px) {
+    height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 500px;
+  }
 }
